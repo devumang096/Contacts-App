@@ -7,8 +7,8 @@ import { showAlert } from "../Components/Alert";
 import { callCreateContact, callUpdateContact } from "../APIManager";
 
 export default function ContactForm({ contact }) {
-  const [state, dispatch] = useContext(ContactContext);
-  const [phones, setPhones] = useState(contact.phones || []);
+  const [dispatch] = useContext(ContactContext);
+  const [phones] = useState(contact.phones || []);
   const [redirect, setRedirect] = useState(false);
   const methods = useForm({ mode: "onChange" });
   const { register, handleSubmit, errors } = methods;
