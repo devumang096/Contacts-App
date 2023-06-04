@@ -4,7 +4,8 @@
   "description": "The API of our demo",
   "main": "server.js",
   "scripts": {
-    "test": "nyc mocha --check-leaks --timeout 12000 --exit"
+    "test": "nyc mocha --check-leaks --timeout 12000 --exit",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
