@@ -6,8 +6,7 @@
   "scripts": {
     "test": "nyc mocha --check-leaks --timeout 12000 --exit",
     "start": "node server.js",
-    "server": "nodemon server.js",
-    "frontend": "cd ./front-end && npm start"
+    "build":"npm i"
   },
   "author": "",
   "license": "ISC",
